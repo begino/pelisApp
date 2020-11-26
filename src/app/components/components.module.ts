@@ -11,8 +11,8 @@ import { PeliculasPosterGridComponent } from './peliculas-poster-grid/peliculas-
   declarations: [
     NavbarComponent,
     SlideshowComponent,
-    PeliculasPosterGridComponent
-  ],
+    PeliculasPosterGridComponent,
+    ],
   imports: [
     CommonModule,
     RouterModule
