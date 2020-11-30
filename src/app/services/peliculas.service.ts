@@ -48,10 +48,10 @@ export class PeliculasService {
 
   buscarPeliculas( texto: string ): Observable<Movie[]> {
 
-    const params = { ...this.params, page: '1', query: texto, include_adult: 'true' };
+    const extendParams = { ...this.params, page: '1', query: texto, include_adult: 'true' };
 
     return this.http.get<CarteleraResponse>(`${ this.baseUrl }/search/movie`, {
-      params: params
+      params: extendParams
     }).pipe(
       map( resp => resp.results )
     );
